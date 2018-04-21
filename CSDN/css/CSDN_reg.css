@@ -1,0 +1,105 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 62.5%;
+	font-family: "微软雅黑";
+}
+body{
+	padding-top: 52px;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Roboto,Noto,Helvetica Neue,sans-serif;
+}
+.main{
+	url(https://csdnimg.cn/passport/login-bg.png);
+	font-size: 12px;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container .wrap-login {
+    display: table;
+    margin: 0 auto;
+}
+.wrap-login .login-user {
+    float: left;
+}
+.row:after, .row:before {
+    display: table;
+    content: " ";
+}
+.container:after, .container:before {
+    display: table;
+    content: " ";
+}
+.login-part{
+	background: #fefefe;
+    border: 1px solid #d5dce5;
+    border-radius: 5px;
+}
+.main .login-part h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #4d5e73;
+    padding: 25px 30px 15px 30px;
+}
+.user-info{
+	padding: 0 30px;
+}
+.user-pass{
+	
+}
+.user-pass form {
+    margin: 0;
+    padding: 0;
+    padding-right: 8px;
+}
+.register{
+	display: block;
+	margin-top: 10px;
+}
+.extendsinput, .username, .password, .uname {
+    background: #fff;
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    border: 1px solid #d5dce5;
+    margin-bottom: 20px;
+    font-weight: normal;
+    text-indent: 23px;
+    outline: 0;
+    font-size: 1.25em;
+    border-radius: 3px;
+}
+input{
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.logging {
+    background: #c90a16;
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+    text-decoration: none;
+    clear: both;
+    width: 100%;
+    border: solid 1px #c90000;
+    border-radius: 3px;
+    box-shadow: 0 0 3px #fff inset;
+    /* box-shadow: 0 0 30px #e3766b inset; */
+}
+.line{
+	background: #eee;
+    height: 1px;
+    margin-top: 40px;
+}

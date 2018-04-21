@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport"
+         content="initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+        <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+		<link rel="stylesheet" href="./css/CSDN_reg.css">
+		<link rel="stylesheet" href="https://csdnimg.cn/release/passport/history/css/bootstrap.css?v=1.2.9" />
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
+	</head>
+	<body>
+		<div id="main">
+			<div class="main" style="background:url(https://csdnimg.cn/passport/login-bg.png)">
+				<div class="container container-custom">
+					<div class="row wrap-login">
+						<div class="login-user col-xs-12 col-sm-6 col-md-5 col-lg-5">
+							<div class="login-part">
+								<h3>账号登录</h3>
+								<div class="user-info">
+									<div class="user-pass">
+										<form action="">
+											<input type="text" class="username" name="username" v-model="username" placeholder="输入用户名/邮箱/手机号"/>
+											<input type="password" class="password" name="password" v-model="password" placeholder="输入密码"/>
+											<input type="text" class="uname" name="uname" v-model="uname" placeholder="输入用户名"/>
+											<input type="button" class="logging" value="注册" @click="register"/>
+										</form>
+									</div>
+								</div>
+								<div class="lines"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<script src="./js/swiper-3.4.2.min.js"></script>
+	<script src="./js/CSDN_reg.js"></script>
+	</body>
+</html>
+

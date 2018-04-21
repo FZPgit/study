@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport"
+         content="initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+        <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+		<link rel="stylesheet" href="./css/CSDN_more.css">
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
+	</head>
+	<body>
+		<div class="header">
+				<div class="header-left">
+					<div class="more"></div>
+					<div class="logo">
+						<div class="icon">							
+						</div>
+					</div>
+				</div>
+				<div class="header-right clearfix">
+					<a href="#" class="search"><img src="images/TIM图片20180413165346.png" alt="" /></a>
+					<div class="login"><a href="./CSDN_info.html">登录</a></div>
+				</div>
+		</div>
+		<div id="main">
+			<div class="top_user_mod clearfix">
+				<div class="top_user_info floatL">
+					<a href="#" class="floatL">
+						<img src="https://avatar.csdn.net/7/F/5/3_m7720eiosi6oa9.jpg" alt="" class="floatL"/>
+						<span class="nick_name odd-overhidden floatL">{{list.author_name}}</span>
+					</a>
+				</div>
+				<div class="floatR csdn-tracking-statistics tracking-click" id="span_add_follow">
+					<a href="#">关注</a>
+				</div>
+			</div>
+			<div class="article">
+				<h1 class="article-title">{{list.title}}</h1>
+				<div class="article_info clearfix">
+					<span class="type">原创</span>
+					<span class="create_time">{{list.date}}</span>
+					<span class="read_num">阅读{{list.read_num}}</span>
+				</div>
+			</div>
+			<button class="collect" @click="collect">收藏</button>
+		</div>
+	<script src="./js/swiper-3.4.2.min.js"></script>
+	<script src="./js/CSDN_more.js"></script>	
+	</body>
+</html>

@@ -1,0 +1,173 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 55.2px;
+	font-family: "微软雅黑";
+}
+body{
+	padding-top: 52px;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Roboto,Noto,Helvetica Neue,sans-serif;
+}
+.header{
+	font-size: 12px;
+    font-family: 'PingFang SC','Microsoft YaHei',SimHei,Arial,SimSun;
+    color: #333;
+    line-height: 18px;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+    padding: 14px 16px;
+    height: 52px;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.header-left{
+	width: 67%;
+	height: 24px;
+	overflow: hidden;
+}
+.clearfix:after {
+    content: '.';
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+.more{
+	width: 50px;
+	height: 30px;
+	background: #FFFFFF;
+	float: left;
+}
+.logo{
+	position: relative;
+	width: 130px;
+	float: right;
+}
+.icon{
+	position: absolute;
+    top: -3px;
+    width: 120px;
+    height: 30px;
+    left: 5px;
+    background-image: url(../images/TIM图片20180413165027.png);
+}
+.header-right{
+	float: right;
+	margin-left: auto;
+}
+.search{
+	margin-right: 30px;
+	float: left;
+}
+.login{
+	display: block;
+	margin-top: 2px;
+}
+.login a{
+	display: inline-block;
+	font-size: 14px;
+	color: #C92027;
+	list-style-type: none;
+    text-decoration: none;
+    border: none;
+    text-align: left;
+    float: right;
+    position: absolute;
+    right: 10px;
+}
+.top_user_mod{
+	padding: .32rem 0;
+    margin: 0 .32rem;
+    border-bottom: 1px solid #ddd;
+    font-weight: 400;
+}
+.floatL{
+	float: left;
+}
+.top_user_info a{
+	color: #4f4f4f;
+	outline: 0;
+    text-decoration: none;
+}
+.top_user_info a img{
+	display: inline-block;
+    width: .64rem;
+    height: .64rem;
+    background-color: #abafab;
+    border-radius: 50%
+}
+body #main .top_user_mod .top_user_info a .nick_name {
+    margin-left: .16rem;
+    line-height: .64rem;
+    width: 2.78rem;
+    font-weight: 700;
+}
+.odd-overhidden {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+}
+.floatR{
+	float: right;
+}
+a{
+	text-decoration: none;
+}
+body #main .top_user_mod #span_add_follow a {
+    display: block;
+    background: #c92027;
+    width: 1.2rem;
+    height: .64rem;
+    color: #fff;
+    border-radius: 4px;
+    line-height: .64rem;
+    text-align: center;
+    font-size: 16px;
+}
+.article{
+	margin-left: .32rem;
+    margin-right: .32rem;
+}
+.article-title{
+	font-size: .4rem;
+    color: #333;
+    letter-spacing: 0;
+    line-height: .6rem;
+    padding-top: .32rem;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-weight: 700;
+    
+}
+.article_info{
+	font-size: .24rem;
+    color: #999;
+    letter-spacing: 0;
+    line-height: .64rem;
+    margin-top: .08rem;
+    padding-bottom: .16rem;
+    margin-bottom: .32rem;
+    border-bottom: 1px solid #ddd;
+}
+.article_info span {
+    margin-right: .24rem;
+}
+.collect{
+	width: 100px;
+	height: 50px;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+}

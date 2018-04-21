@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport"
+         content="initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+        <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+		<link rel="stylesheet" href="./css/CSDN.css">
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
+	</head>
+	<body>
+		<div id="main">
+			<div class="header">
+				<div class="header-left">
+					<a href="./CSDN_user.html">我的</a>
+					<a href="./CSDN_article.html">发布文章</a>
+					<div class="more"></div>
+					<div class="logo">
+						<div class="icon">							
+						</div>
+					</div>
+				</div>
+				<div class="header-right clearfix">
+					<a href="#" class="search"><img src="images/TIM图片20180413165346.png" alt="" /></a>
+					<div class="login"><a href="./CSDN_info.html">登录</a></div>
+				</div>
+			</div>
+			<div class="d-flex">
+				<div class="nav-mark">
+					<a href="#" class="btn-nav active">推荐</a>
+					<a href="#" class="btn-nav" v-for="item in nav">{{item.classify_name}}</a>
+				</div>
+			</div>
+			<div class="mainContent">
+				<div class="top-pic">
+					<div class="swiper-container">
+					    <div class="swiper-wrapper">
+							<div class="swiper-slide" v-for="item in pic"><img :src="item.img" alt=""></div>
+					    </div>
+				   		<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+			<ul class="feedList-mod">
+				<li v-for="item in list">
+					<h2 class="csdn-tracking-statistics"><a :href="'./CSDN_more.html?id='+item.id">{{item.title}}</a></h2>
+					<div class="info-tag">
+						<p class="tag">{{item.classify_name}}</p>
+						<p class="user-name">{{item.author_name}}</p>
+						<p class="read-count">{{item.read_num}}</p>
+						<p class="date">{{item.data}}</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	<script src="./js/swiper-3.4.2.min.js"></script>
+	<script src="./js/CSDN.js"></script>
+	</body>
+</html>
