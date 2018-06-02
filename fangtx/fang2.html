@@ -1,0 +1,1452 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>【房地产门户/房地产网】-房天下</title>
+    <style>       
+        html,body,ul,li,img,a,p {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: "Microsoft Yahei";
+        }
+        .head{
+            width: 100%;
+            height: 50px;
+            background-image: url("./image/newgif.gif");
+            background-position: 0px 554px;
+            position: relative;
+            z-index: 1;
+        }
+        .head-list{
+            width: 1200px;
+            height: 50px;
+            line-height: 50px;
+            margin: 0 auto;
+        }
+        .head-list a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .s1{
+            float: left;
+            font-size: 14px; 
+            height: 35px; 
+            line-height: 20px;         
+            padding:15px 5px 0 5px;
+            position: relative;
+        }
+        .s1 img{
+            margin: 8px 0 0 3px;
+        }
+        .s1:hover,.s2:hover,.s3:hover,.s4:hover,.s5:hover,.s6:hover,.s7:hover,.s8:hover,.s9:hover,.s10:hover,.s11:hover,.s12:hover,.s13:hover{
+            background-color: #B30000;
+        }      
+        .s1-box{
+            display: none;
+            width: 470px;
+            position: absolute;
+            z-index: 1000;
+            top: 50px;
+            left: 0px;
+            text-align: center;
+            background-color: white;
+            border:1px solid grey;
+            border-top: none;
+        }
+        .s1-boxnr{
+            width: 460px;
+            color: #666;
+        }
+        .s1-boxnr ul li{
+            float: left;
+            width: 48px;
+            padding: 4px 8px;
+            color: #666;
+            list-style: none;
+            text-align: left;
+            font-size: 12px;
+        }
+        .s1-box img{
+            position: absolute;
+            top: -15px;
+            left: 15px;
+        }
+        .s3-box img,.s4 img,.s5 img,.s7 img,.s8 img,.s9 img,.s10 img,.s11 img{
+            position: absolute;
+            top: -7px;
+            left: 15px;
+        }
+        .head .s1-box .sp{
+            width: 100px;
+        }     
+        .s2,.s3,.s4,.s5,.s6,.s7,.s8,.s9,.s10,.s11,.s12,.s13,.denglu{
+            float: left;
+            font-size: 14px; 
+            height: 35px; 
+            line-height: 20px;         
+            padding: 0 12px;
+            padding-top: 15px;
+            position: relative;
+        }
+        .s3-box{
+            position: absolute;
+            top: 50px;
+            left: 0;
+            text-align: center;
+            width: 140px;
+            display: none; 
+            background-color: #fff;
+            border: 1px solid #b2b2b2;
+            border-top: none;
+            z-index: 2;
+        }
+        .s3-boxnr ul li,.s4-boxnr ul li{
+            width: 120px;
+            height: 26px;
+            line-height: 26px;
+            padding: 0 10px;
+            list-style: none;
+            text-align: left;
+            font-size: 12px;
+        }
+        .s3-img,.s4-img,.s5-img,.s6-img,.s7-img{
+            background-image: url("./image/newgif.gif");
+            background-position: 0px -732px;
+            width: 120px;
+            height: 34px;
+            line-height: 34px;
+            color: white;
+            font-size: 12px;
+            text-align: center;
+            margin: 8px 10px;
+        }
+        .s4-box{
+            position: absolute;
+            top: 50px;
+            left: 0;
+            text-align: center;
+            width: 140px;
+            display: none;
+            background-color: #fff;
+            border: 1px solid #b2b2b2;
+            border-top: none;
+            z-index: 2;
+        }
+        .s5-box{
+            position: absolute;
+            top: 50px;
+            left: 0;
+            text-align: center;
+            width: 140px;
+            display: none;
+            background-color: #fff;
+            border: 1px solid #b2b2b2;
+            border-top: none;
+            z-index: 2;
+        }
+        .s5-box ul li,.s6-box ul li,.s7-box ul li,.s8-box ul li,.s9-box ul li,.s10-box ul li,.s11-box ul li,.s13-box ul li,.denglu ul li{
+            width: 120px;
+            height: 26px;
+            line-height: 26px;
+            padding: 0 10px;
+            list-style: none;
+            text-align: left;
+            font-size: 12px;
+        }
+        .s7-box{
+            position: absolute;
+            top: 50px;
+            left: 0;
+            text-align: center;
+            width: 140px;
+            display: none;
+            background-color: #fff;
+            border: 1px solid #b2b2b2;
+            border-top: none;
+            z-index: 2;
+        }
+        .s7-spl{
+            color: rgb(255, 0, 0);
+        }
+        .s8-box{
+            position: absolute;
+            top: 50px;
+            left: 0;
+            text-align: center;
+            width: 140px;
+            display: none;
+            background-color: #fff;
+            border: 1px solid #b2b2b2;
+            border-top: none;
+            z-index: 2;
+        }
+        .s9-box{
+            position: absolute;
+            top: 50px;
+            left: 0;
+            text-align: center;
+            width: 140px;
+            display: none;
+            background-color: #fff;
+            border: 1px solid #b2b2b2;
+            border-top: none;
+            z-index: 2;
+        } 
+        .s10-box{
+            position: absolute;
+            top: 50px;
+            left: 0;
+            text-align: center;
+            width: 140px;
+            display: none;
+            background-color: #fff;
+            border: 1px solid #b2b2b2;
+            border-top: none;
+            z-index: 2;
+        } 
+        .s11-box{
+            position: absolute;
+            top: 50px;
+            left: 0;
+            text-align: center;
+            width: 140px;
+            display: none;
+            background-color: #fff;
+            border: 1px solid #b2b2b2;
+            border-top: none;
+            z-index: 111;
+        } 
+        .s12-box{
+            height: 160px;
+            width: 228px;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            background-color: #fff;
+            border: 1px solid #b2b2b2;
+            padding: 0 8px;
+            display: none;
+            z-index: 111;
+        }
+        .s12-left{
+            padding-right: 9px;
+            border-right: 1px dashed #ddd;
+            margin-right: 10px;
+            float: left;
+        }
+        .s12-right{
+            float: left;
+        }
+        .s12-title1,.s12-title2{
+            height: 40px;
+            line-height: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #333;
+            margin-bottom: 5px;
+        } 
+        .s12-img1,.s12-img2{
+            width: 98px;
+            height: 98px;
+            text-align: center;
+            padding: 2px;
+            margin: 0 auto;
+            background: #f1f1f1;
+            color: #c00;
+            border: 1px solid #dadada;
+            z-index: 111;
+        }
+        .s13-box{
+            position: absolute;
+            top: 50px;
+            left: 0;
+            text-align: center;
+            width: 140px;
+            display: none;
+            background-color: #fff;
+            border: 1px solid #b2b2b2;
+            border-top: none;
+            z-index: 111;
+        } 
+        .jubao{
+            float: right;
+            width: 128px;
+            height: 32px;
+            padding: 9px 0 0 3px;
+        }
+        .zhuce{
+            width: 28px;
+            height: 20px;
+            float: right;
+            font-size: 14px;
+            color: white;
+            margin: 0 5px;
+        }
+        .line{
+            float: right;
+            width: 1px;
+            height: 20px;
+            margin-top: 17px;
+            background: #fff;
+        }
+        .denglu{
+            position: relative;
+            width: 28px;
+            height: 20px;
+            float: right;
+            font-size: 14px;
+            margin: 0 5px;
+        }
+        .denglu p{
+            color: white;
+        }
+        .denglu-box{
+            position: absolute;
+            top: 50px;
+            left: 0;
+            text-align: center;
+            width: 140px;
+            display: none;
+            background-color: #fff;
+            border: 1px solid #b2b2b2;
+            border-top: none;
+            z-index: 2;
+        } 
+        .dingdan{
+            position: relative;
+            float: right;
+            padding-top: 15px;
+            font-size: 14px;
+            color: #fff;
+            line-height: 22px;
+        }
+        .d-img{
+            width: 16px;
+            height: 16px;
+            background-image: url("./image/9.png");
+            background-repeat: no-repeat;
+            background-position: 0px -16px;
+            position: absolute;
+            left: -20px;
+            top: 18px;
+        }
+        .kanfang{
+            position: relative;
+            float: right;
+            padding-top: 15px;
+            font-size: 14px;
+            color: #fff;
+            line-height: 22px;
+            margin-right: 30px;
+        }
+        .k-img{
+            width: 16px;
+            height: 16px;
+            background-image: url("./image/9.png");
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+            position: absolute;
+            left: -20px;
+            top: 18px;
+        }
+        .clearfix::after {
+            clear: both;
+            display: block;
+            content: "";
+            height: 0;
+        }
+        .box-list{
+            list-style: none;
+          /*  width: 1500px;*/
+        }
+        .box-list img {
+            width: 100%;
+            height: 464px;           
+            position: absolute;
+            height: 464px;
+            left: 0;
+            top: 0;
+            right: 500px;
+            bottom: 0;
+            margin: auto;        
+        }
+        .box-list>li {
+            float: left;
+            line-height: 300px;
+            text-align: center;
+        }
+        .box {
+            width: 100%;
+            height: 464px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .left {
+            width: 27px;
+            height: 44px;
+            background-image: url("./image/newgif.gif");
+            background-position: 0px -1069px;
+            position: absolute;
+            left: 100px;
+            top: 215px;
+        }
+        .left:hover{
+            background-image: url("./image/newgif.gif");
+            background-position: -42px -1069px;
+        }
+        .right {
+            width: 27px;
+            height: 44px;
+            background-image: url("./image/newgif.gif");
+            background-position: 0px -1123px;           
+            position: absolute;
+            top: 215px;
+            right: 100px;
+        }
+        .right:hover{
+            background-image: url("./image/newgif.gif");
+            background-position: -42px -1123px;
+        }
+        .icon{
+            position: absolute;
+            bottom: 0;
+            left: 45%;
+        }
+        .icon li{
+            list-style: none;
+            float: left;
+            width: 15px;
+            height: 15px;
+            border-radius: 35px;
+            background-color: #fff;
+            margin: 0 10px;
+        }
+        .icon .selected{
+            background-color: red;
+        }
+        .hide{
+            display: none;
+        }
+        .show{
+            display: block;
+        }
+        .float{
+            width: 36px;
+            height: 180px;
+            position: fixed;
+            left: 5px;
+            top: 200px;
+            z-index: 10;
+        }
+        .qrcode{
+            background-image: url("./image/qrcodel1.jpg");
+            background-position: 0px 0px;
+            height: 180px;
+            position: relative;
+        }
+        .qrcode:hover{
+            background-image: url("./image/qrcodel1.jpg");
+            background-position: 0px -180px;
+        }
+        .qrcode-box{
+            position: fixed;
+            top: 170px;
+            left: 41px;
+            width: 160px;
+            height: 206px;
+            z-index: 9999;
+            overflow: hidden;
+            border: 1px solid #e7e7e7;
+            display: none;
+            background: #fff;
+        }
+        .qrcode-box img{
+            height: 128px;
+            width: 128px;
+            text-align: center;
+            display: block;
+            margin: 15px auto 8px;
+        }
+        .qrcode-box p{
+            line-height: 22px;
+            text-align: center;
+            font-size: 13px;
+        }
+        .content{
+            width: 100%;
+        }
+        .banner{
+            width: 760px;
+            position: absolute;
+            z-index: 0;
+            left: 52%;
+            top: 100px;
+            margin-left: -380px;
+        }
+        .banner-mag{
+            width: 720px;
+            height: 200px;
+            padding: 40px 0 0 40px;
+            color: #fff;
+            text-align: left;
+            background-image: url("./image/searchbj.png");
+            margin: 0 auto;
+            z-index: 4;
+        }
+        .new1{
+            width: 720px;
+            height: 54px;
+        }
+        .new1-s1{
+            float: left;
+            width: 220px;
+            height: 54px;
+            background-image: url("./image/slogoV01.png");
+            background-repeat: no-repeat;
+        }
+        .new1-s2 p{
+            height: 18px;
+            font-size: 14px;
+            color: white;
+            float: left;
+            padding-top: 12px;
+        }
+        .city{
+            height: 18px;
+            font-size: 14px;
+            color: white;
+            float: left;
+            padding-top: 12px;
+        }
+        .new1-s2 .city:hover{
+            border-bottom: 1px solid #fff;
+        }
+        
+        .new2{
+            width: 720px;
+            height: 36px;
+            margin-top: 10px;
+            z-index: 5;
+            position: relative;
+        }
+        .new2-s1 {
+            float: left;
+            height: 36px;
+            line-height: 36px;
+            font-size: 15px;
+            position: relative;
+        }
+        .new2-s1 li{
+            list-style: none;
+            float: left;
+            padding: 0 10px;
+            font-size: 15px;
+        }
+        .new2-s1 a{
+            text-decoration: none;
+            color: white;
+        }
+        .new2-s1 li:hover{
+            background-color: #c00;
+            border-radius: 3px;
+        }
+        .new2-s1 span{
+            padding:0 12px;
+            position: relative;
+        }
+        .new2-s1 img{
+            position: absolute;
+            right: 0;
+            top: 15px;
+        }
+        .menu{
+            width: 130px;
+            height: 170px;
+            display: none;
+            background-color: white;
+            border:1px solid #b2b2b2;
+            position: absolute;
+            right:-80px;
+            z-index: 1000;
+        }
+        .menu ul li{
+            width: 130px;
+            height: 23px;
+            color: black;
+            font-size: 10px;
+            padding: 0 5px 0 5px;
+            z-index: 1000;
+        }
+        .type{
+            width: 720px;
+            height: 42px;
+            margin-top: 10px;
+            background-image: url("./image/newgif.gif");
+            background-position: -150px -285px;
+            position: relative;
+        }
+        .inputstyle{
+            float: left;
+            width: 610px;
+            height: 42px;
+            line-height: 42px;
+            color: #888;
+            border: 0;
+            font-size: 14px;
+            font-family: "Microsoft Yahei"; 
+            position: relative;         
+        }
+        .type img{
+            width: 16px;
+            height: 7px;          
+            position: absolute;
+            top: -6px;
+            left: 27px;
+        }
+        .new{
+            width: 100%;
+            height: 54px;
+            border-bottom: 1px solid #ddd;
+            padding: 25px 0;
+        }
+        .n{
+            width: 1280px;
+            height: 54px;
+            margin: 0 auto;
+        }
+        .ns, .nz, .nj, .nk, .nq{
+            width: 240px;
+            float: left;
+            height: 54px;
+            border-right: 1px dashed #ddd;
+        }
+        .n p{
+            float: left;
+            width: 80px;
+            height: 54px;
+            line-height: 54px;
+            font-size: 28px;
+            color: #c00;
+        }
+        .ny{
+            float: left;
+            line-height: 27px;
+            font-size: 14px;
+            margin-left: 80px; 
+            position: relative;
+            bottom: 55px;
+        }
+        .n ul li{
+            float: left;
+            list-style: none;           
+        }
+        .new a{
+            text-decoration: none;
+            color: black;
+        }
+        .n1{
+            margin-right: 48px;
+        }
+        .n2{
+            margin: 5px 34px 0 0;
+        }
+        .n3{
+            margin-top: 5px;
+        }
+        .nz{
+            width: 185px;
+            margin-left: 26px;
+        }
+        .nj, .nk, .nq{
+            margin-left: 26px;
+        }
+        .nk .n1{
+            margin-right: 30px;
+        }
+        .nk .n2{
+            margin: 5px 28px 0 0;
+        }
+        .nq .n1{
+            margin-right: 34px;
+        }
+        .new ul li a:hover{
+            color: red;
+            border-bottom: 1px solid red;
+        }
+        .laybox{
+            width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            margin-top: 20px;
+        }
+        .title{
+            width: 1198px;
+            height: 46px;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+        }
+        .t1{
+            float: left;
+            width: 398px;
+            text-align: center;
+            height: 43px;
+            line-height: 43px;
+            border-bottom: 1px solid #ddd;
+            border-top: 2px solid #ddd;
+            font-size: 18px;
+            background: #f1f1f1;
+            border-right: 1px solid #ddd;
+        }
+        .til-pic{
+            width: 1200px;
+            height: 252px;
+            margin-top: 10px;
+            position: relative;
+            left: 15px;
+        }
+        .til-pic1{
+            float: left;
+            width: 283px;
+            height: 252px;
+            margin-right: 20px;         
+        }
+        .til-pic1 img{
+            width: 260px;
+            height: 160px;
+            position: relative;
+        }
+        .til-pic2{
+            float: left;
+            width: 283px;
+            height: 252px;
+            margin-right: 0;
+        }
+        .til-pic2 img{
+            width: 260px;
+            height: 160px;
+        }
+        .til-text{
+            width: 258px;
+            height: 69px;
+            border: 1px solid #e7e7e7;
+        }
+        .til-text .text-left h1{
+            width: 129px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 18px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .til-text .text-left h1:hover{
+            color: red;
+        }
+        .text-left{
+            float: left;
+            width: 129px;
+            height: 69px;
+        }
+        .text-left p{
+            width: 129px;
+            height: 20px;
+            font-size: 12px;
+            color: #929292;
+            text-align: center;
+        }
+        .text-right{
+            float: left;
+            width: 129px;
+            height: 69px;
+            background-image: url("./image/hottdbj.gif");
+            background-repeat: no-repeat;
+        }
+        .text-right h1{
+            width: 129px;
+            height: 30px;
+            font-size: 18px;
+            text-align: center;
+            margin-top: 10px;
+            color: #c00;
+        }
+        .text-right p{          
+            width: 129px;
+            height: 20px;
+            font-size: 12px;
+            color: #929292;
+            text-align: center;
+        }  
+        .select{
+            background-color: white;
+            border-top: 2px solid #C00;
+            border-bottom: none;
+        }
+        .clearfix::after{
+            clear: both;
+            display: block;
+            height: 0;
+            content: "";
+        }
+    </style>
+    <script src="./js/jquery-3.2.0.min.js"></script>
+</head>
+<body>
+    <div class="head">
+        <div class="head-list clearfix">
+            <div class="s1"><a href="#">全国</a><img src="./image/navicon1.gif" alt="">
+                <div class="s1-box">
+                <img src="./image/navsjt.gif" alt="">
+                    <div class="s1-boxnr clearfix">
+                        <ul>
+                            <li>全国</li>
+                            <li>北京</li>  
+                            <li>上海</li>  
+                            <li>广州</li>  
+                            <li>深圳</li>  
+                            <li>成都</li>  
+                            <li>重庆</li>  
+                            <li>天津</li>  
+                            <li>武汉</li>                      
+                            <li>苏州</li>  
+                            <li>杭州</li>
+                            <li>南京</li>  
+                            <li>青岛</li>  
+                            <li>长沙</li>  
+                            <li>西安</li>  
+                            <li>沈阳</li>  
+                            <li>长春</li>  
+                            <li>常州</li>  
+                            <li>大连</li>  
+                            <li>东莞</li>  
+                            <li>海南</li>  
+                            <li>济南</li> 
+                            <li>三亚</li>  
+                            <li>石家庄</li>  
+                            <li>无锡</li>  
+                            <li>郑州</li>  
+                            <li>宁波</li>  
+                            <li>南宁</li> 
+                            <li>昆明</li>  
+                            <li>合肥</li>  
+                            <li>南昌</li>  
+                            <li>香港</li>  
+                            <li>海外</li>  
+                            <li class="sp">全部658城市</li>      
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="s2"><a href="#">首页</a></div>
+            <div class="s3"><a href="#">新房</a>
+                <div class="s3-box">
+                <img src="./image/navsjt.gif" alt="">
+                    <div class="s3-boxnr">
+                        <ul>
+                            <li>本月开盘</li>
+                            <li>热门楼盘</li>
+                            <li>新房房源</li>
+                            <li>房天下直销</li>
+                            <li>打折楼盘</li>
+                            <li>新开楼盘</li>
+                            <li>楼盘导航</li>
+                            <li>新房排行榜</li>
+                            <li>购房知识</li>
+                            <li>看房团</li>
+                            <li>商业地产</li>
+                        </ul>
+                        <div class="s3-img">帮你找房</div>
+                    </div>
+                </div>
+            </div>
+            <div class="s4"><a href="#">二手房</a>
+                <div class="s4-box">
+                <img src="./image/navsjt.gif" alt="">
+                    <div class="s4-boxnr">
+                        <ul>
+                            <li>在售房源</li>
+                            <li>优选房源</li>
+                            <li>房天下直销</li>
+                            <li>找小区</li>
+                            <li>找别墅</li>
+                            <li>查成交</li>
+                            <li>二手房排行榜</li>
+                            <li>购房知识</li>
+                        </ul>
+                        <div class="s4-img">免费发布求租</div>
+                    </div>
+                </div>
+            </div>
+            <div class="s5"><a href="#">租房</a>
+                <div class="s5-box">
+                <img src="./image/navsjt.gif" alt="">
+                    <ul>
+                        <li>房天下精选</li>
+                        <li>个人房源</li>
+                        <li>整租房源</li>
+                        <li>合租房源</li>
+                        <li>别墅房源</li>
+                        <li>短租日租</li>
+                        <li>特价房</li>
+                        <li>租房知识</li>
+                        <li>房天下精选</li>
+                    </ul>
+                    <div class="s5-img">免费发布出租</div>
+                </div>            
+            </div>
+            <div class="s6"><a href="#">查房价</a>
+            </div>
+            <div class="s7"><a href="#">装修家居</a>
+                <div class="s7-box">
+                <img src="./image/navsjt.gif" alt="">
+                    <ul>
+                        <li class="s7-spl">免费装修报价</li>
+                        <li>找装修公司</li>
+                        <li>装修日记</li>
+                        <li>装修效果图</li>
+                        <li>装修攻略</li>
+                        <li>家居资讯</li>
+                        <div class="s7-img">帮你装修</div>
+                    </ul>
+                </div>
+            </div>
+            <div class="s8"><a href="#">写字楼</a>
+                <div class="s8-box">
+                <img src="./image/navsjt.gif" alt="">
+                    <ul>
+                        <li>写字楼出租</li>
+                        <li>写字楼出售</li>
+                        <li>写字楼新盘</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="s9"><a href="#">商铺</a>
+                <div class="s9-box">
+                <img src="./image/navsjt.gif" alt="">
+                    <ul>
+                        <li>商铺出租</li>
+                        <li>商铺出售</li>
+                        <li>商铺新盘</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="s10"><a href="#">业主论坛</a>
+                <div class="s10-box">
+                <img src="./image/navsjt.gif" alt="">
+                    <ul>
+                        <li>精华贴</li>
+                        <li>购房圈</li>
+                        <li>业主活动</li>
+                        <li>装修论坛</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="s11"><a href="#">房产百科</a>
+                <div class="s11-box">
+                <img src="./image/navsjt.gif" alt="">
+                    <ul>
+                        <li>房产快讯</li>
+                        <li>房产问答</li>
+                        <li>房产知识</li>
+                        <li>房产圈</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="s12"><a href="#">移动APP</a>
+                <div class="s12-box">
+                    <div class="s12-left">
+                        <div class="s12-title1">
+                            扫描二维码下载<br>
+                            房天下APP
+                        </div>
+                        <div class="s12-img1">
+                            <img src="./image/qrcodeQudaonew.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="s12-right">
+                        <div class="s12-title2">
+                            手机浏览器访问<br>
+                            房天下
+                        </div>
+                        <div class="s12-img2">
+                            <img src="./image/fangm.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s13"><a href="#">更多</a>
+                <div class="s13-box">
+                    <ul>
+                        <li>金融贷款</li>
+                        <li>产业</li>
+                        <li>海外产业</li>
+                        <li>文化活动频道</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="jubao"><img src="./image/12377.jpg" alt=""></div>
+            <div class="zhuce"><p>注册</p></div>
+            <div class="line"></div>
+            <div class="denglu"><p>登录</p>
+                <div class="denglu-box">
+                    <ul>
+                        <li>我的房天下</li>
+                        <li>搜房帮</li>
+                        <li>装修帮</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dingdan">
+                <div class="d-img"></div>
+                <p>订单</p>
+            </div>
+            <div class="kanfang">
+                <div class="k-img"></div>
+                <p>看房</p>
+            </div>
+        </div>
+    </div>
+    <div class="float">
+        <div class="qrcode">
+            <div class="qrcode-box">
+                <img src="./image/qrcoderQudao_new (1).png" alt="">
+                <p>扫描下载房天下APP</p>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <ul class="box-list clearfix">
+            <li><img src="./image/3fe836d525754709a587dec46847567f.jpg" alt=""></li>
+            <li class="hide"><img src="./image/f3dae2f84a994f49adaef5eaac718ae8.jpg" alt=""></li>
+            <li class="hide"><img src="./image/95202de71d324402bfc9593e440701e5.jpg" alt=""></li>           
+        </ul>
+        <ul class="icon">
+            <li class="selected"></li>
+            <li></li>
+            <li></li>
+        </ul> 
+        <div class="left hide"></div>
+        <div class="right hide"></div>
+        <div class="banner">
+            <div class="banner-mag">
+                <div class="new1">
+                    <div class="new1-s1"></div>
+                    <div class="new1-s2"><p>全国【</p><div class="city">切换城市</div><p>】</p></div>
+                </div>
+                <div class="new2">
+                    <div class="new2-s1">
+                        <ul class="touch">
+                            <li><a href="#">查房价</a></li>
+                            <li><a href="#">买新房</a></li>
+                            <li><a href="#">买二手房</a></li>
+                            <li><a href="#">找租房</a></li>
+                            <li><a href="#">装修家园</a></li>
+                            <li><a href="#">房产快讯</a></li>
+                            <li><a href="#">海外房产</a></li>
+                            <li><a href="#">地图找房</a></li>
+                            <span>更多</span><img src="./image/navicon1.gif" alt="">
+                        </ul>
+                        <div class="menu">
+                            <ul>
+                                <li>房产问答</li>
+                                <li>房产知识</li>
+                                <li>短租</li>
+                                <li>写字楼</li>
+                                <li>商铺</li>
+                                <li>业主论坛</li>
+                                <li>综合搜索</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="type">
+                    <img src="./image/navsjt.gif" alt="">
+                    <input type="text" class="inputstyle" value="请输入小区名称或地址，给自己的房子估个价">
+                    <input type="text" class="inputstyle hide" value="输入关键字（楼盘名/地名/开发商等）">
+                    <input type="text" class="inputstyle hide" value="输入关键字（楼盘名或地名）">
+                    <input type="text" class="inputstyle hide" value="输入关键字（楼盘名或地名）">
+                    <input type="text" class="inputstyle hide" value="请输入户型/功能间/风格等关键字">
+                    <input type="text" class="inputstyle hide" value="输入关键字">
+                    <input type="text" class="inputstyle hide" value="输入关键字（国家/城市/地区）">
+                    <input type="text" class="inputstyle hide" value="请输入区县/商圈/小区名">
+                </div>
+            </div>
+        </div>       
+    </div>
+    <div class="content">
+        <div class="new">
+            <div class="n">
+                <div class="ns">
+                    <p>买房</p>
+                    <div class="ny">
+                        <ul>
+                            <li class="n1"><a href="#">新房</a></li>
+                            <li><a href="#">新房房源</a></li>
+                            <li class="n2"><a href="#">二手房</a></li>
+                            <li class="n3"><a href="#">业主论坛</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nz">
+                    <p>卖房</p>
+                    <div class="ny">
+                        <ul>
+                            <li class="n1"><a href="#">我要卖房</a></li>                        
+                            <li class="n2"><a href="#">查房价</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nj">
+                    <p>租房</p>
+                    <div class="ny">
+                        <ul>
+                            <li class="n1"><a href="#">找租房</a></li>
+                            <li><a href="#">短租</a></li>
+                            <li class="n2"><a href="#">我要出租</a></li>
+                            <li class="n3"><a href="#">月付公寓</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nk">
+                    <p>装修</p>
+                    <div class="ny">
+                        <ul>
+                            <li class="n1"><a href="#">装修案例</a></li>
+                            <li><a href="#">我要装修</a></li>
+                            <li class="n2"><a href="#">找装修公司</a></li>
+                            <li class="n3"><a href="#">抢优惠</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nq">
+                    <p>直销</p>
+                    <div class="ny">
+                        <ul>
+                            <li class="n1"><a href="#">新房直销</a></li>
+                            <li><a href="#">二手房源</a></li>
+                            <li class="n2"><a href="#">金融贷款</a></li>
+                            <li class="n3"><a href="#">我要加盟</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+        </div>      
+    </div>
+    <div class="laybox">
+        <div class="title">
+            <div class="t1">热销楼盘</div>
+            <div class="t1">品牌地产</div>
+            <div class="t1">全城好房</div>
+        </div>
+        <div class="title-box">
+            <div class="til-pic">   
+                <div class="til-pic1">
+                    <div class="til-img"><img src="./image/260x160c.jpg" alt=""></div>
+                    <div class="til-text">
+                        <div class="text-left">
+                            <h1>昌平</h1>
+                            <p>北五环奥北别墅区</p>
+                        </div>
+                        <div class="text-right">
+                            <h1>独栋别墅</h1>
+                            <p>现房在售</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="til-pic1">
+                    <div class="til-img"><img src="./image/260x160c (1).jpg" alt=""></div>
+                    <div class="til-text">
+                        <div class="text-left">
+                            <h1>丰台</h1>
+                            <p>西四环边</p>
+                        </div>
+                        <div class="text-right">
+                            <h1>改善之选</h1>
+                            <p>科技大宅</p>
+                        </div>
+                    </div>
+                </div>  
+                <div class="til-pic1">
+                    <div class="til-img"><img src="./image/282x188.jpg" alt=""></div>
+                    <div class="til-text">
+                        <div class="text-left">
+                            <h1>朝青</h1>
+                            <p>优质二手房</p>
+                        </div>
+                        <div class="text-right">
+                            <h1>1000万以上</h1>
+                            <p>共329条房源</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="til-pic2">
+                    <div class="til-img"><img src="./image/282x188 (1).jpg" alt=""></div>
+                    <div class="til-text">
+                        <div class="text-left">
+                            <h1>红包等你领</h1>
+                            <p>全国25城联动</p>
+                        </div>
+                        <div class="text-right">
+                            <h1>抽iphone8</h1>
+                            <p>赢10000元现金</p>
+                        </div>
+                    </div>
+                </div>                  
+            </div>
+            <div class="til-pic hide">  
+                <div class="til-pic1">
+                    <div class="til-img"><img src="./image/282x188c.jpg" alt=""></div>
+                    <div class="til-text">
+                        <div class="text-left">
+                            <h1>昌平</h1>
+                            <p>北五环奥北别墅区</p>
+                        </div>
+                        <div class="text-right">
+                            <h1>独栋别墅</h1>
+                            <p>现房在售</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="til-pic1">
+                    <div class="til-img"><img src="./image/282x188c (2).jpg" alt=""></div>
+                    <div class="til-text">
+                        <div class="text-left">
+                            <h1>丰台</h1>
+                            <p>西四环边</p>
+                        </div>
+                        <div class="text-right">
+                            <h1>改善之选</h1>
+                            <p>科技大宅</p>
+                        </div>
+                    </div>
+                </div>  
+                <div class="til-pic1">
+                    <div class="til-img"><img src="./image/282x188c (3).jpg" alt=""></div>
+                    <div class="til-text">
+                        <div class="text-left">
+                            <h1>朝青</h1>
+                            <p>优质二手房</p>
+                        </div>
+                        <div class="text-right">
+                            <h1>1000万以上</h1>
+                            <p>共329条房源</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="til-pic2">
+                    <div class="til-img"><img src="./image/282x188c (1).jpg" alt=""></div>
+                    <div class="til-text">
+                        <div class="text-left">
+                            <h1>红包等你领</h1>
+                            <p>全国25城联动</p>
+                        </div>
+                        <div class="text-right">
+                            <h1>抽iphone8</h1>
+                            <p>赢10000元现金</p>
+                        </div>
+                    </div>
+                </div>                  
+            </div>
+            <div class="til-pic hide">  
+                <div class="til-pic1">
+                    <div class="til-img"><img src="./image/282x188 (2).jpg" alt=""></div>
+                    <div class="til-text">
+                        <div class="text-left">
+                            <h1>昌平</h1>
+                            <p>北五环奥北别墅区</p>
+                        </div>
+                        <div class="text-right">
+                            <h1>独栋别墅</h1>
+                            <p>现房在售</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="til-pic1">
+                    <div class="til-img"><img src="./image/207x138c.jpg" alt=""></div>
+                    <div class="til-text">
+                        <div class="text-left">
+                            <h1>丰台</h1>
+                            <p>西四环边</p>
+                        </div>
+                        <div class="text-right">
+                            <h1>改善之选</h1>
+                            <p>科技大宅</p>
+                        </div>
+                    </div>
+                </div>  
+                <div class="til-pic1">
+                    <div class="til-img"><img src="./image/207x138c (1).jpg" alt=""></div>
+                    <div class="til-text">
+                        <div class="text-left">
+                            <h1>朝青</h1>
+                            <p>优质二手房</p>
+                        </div>
+                        <div class="text-right">
+                            <h1>1000万以上</h1>
+                            <p>共329条房源</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="til-pic2">
+                    <div class="til-img"><img src="./image/207x138c (2).jpg" alt=""></div>
+                    <div class="til-text">
+                        <div class="text-left">
+                            <h1>红包等你领</h1>
+                            <p>全国25城联动</p>
+                        </div>
+                        <div class="text-right">
+                            <h1>抽iphone8</h1>
+                            <p>赢10000元现金</p>
+                        </div>
+                    </div>
+                </div>                  
+            </div>
+
+        </div>
+    </div>
+    <script>
+        $(function(){
+            var index = $(".icon li.selected").index();
+            function goLeft(){
+                if(index==0){index = 3;}
+                $(".icon li").eq(index-=1).addClass("selected").siblings().removeClass("selected")
+                $(".box-list li").eq(index).fadeIn().siblings().fadeOut();
+            }
+            function goRight(){
+                if(index==2){index = -1;}
+                $(".icon li").eq(index+=1).addClass("selected").siblings().removeClass("selected")
+                $(".box-list li").eq(index).fadeIn().siblings().fadeOut();
+            }
+            $(".left").click(function(){
+                 goLeft()
+            })
+            $(".right").click(function(){
+                goRight()
+            })
+            //定时器
+            function exportTimer(){
+                timer = setInterval(function(){
+                    goLeft();
+                },3000);
+            }
+            exportTimer();
+            $(".left,.right").hover(
+                function(){
+                    clearInterval(timer)
+                },
+                function(){
+                    exportTimer();
+                }
+            )
+            $(".icon li").mouseover(function(){
+                $(this).addClass("selected").siblings().removeClass("selected")
+                var index = $(this).index();
+                $(".box-list li").eq(index).fadeIn().siblings().fadeOut();
+            })
+            $(".box").mouseover(function(){
+                $(".left,.right").show()                             
+            }) 
+            $(".box").mouseout(function(){
+                $(".left,.right").hide()                             
+            }) 
+            $(".s1").mouseover(function(){
+                $(".s1-box").show()
+            })
+            $(".s1").mouseout(function(){
+                $(".s1-box").hide()
+            })
+            $(".s3").mouseover(function(){
+                $(".s3-box").show()
+            })
+            $(".s3").mouseout(function(){
+                $(".s3-box").hide()
+            }) 
+            $(".s4").mouseover(function(){
+                $(".s4-box").show()
+            })
+            $(".s4").mouseout(function(){
+                $(".s4-box").hide()
+            }) 
+            $(".s5").mouseover(function(){
+                $(".s5-box").show()
+            })
+            $(".s5").mouseout(function(){
+                $(".s5-box").hide()
+            })  
+            $(".s7").mouseover(function(){
+                $(".s7-box").show()
+            })
+            $(".s7").mouseout(function(){
+                $(".s7-box").hide()
+            })
+            $(".s8").mouseover(function(){
+                $(".s8-box").show()
+            })
+            $(".s8").mouseout(function(){
+                $(".s8-box").hide()
+            })
+            $(".s9").mouseover(function(){
+                $(".s9-box").show()
+            })
+            $(".s9").mouseout(function(){
+                $(".s9-box").hide()
+            }) 
+            $(".s10").mouseover(function(){
+                $(".s10-box").show()
+            })
+            $(".s10").mouseout(function(){
+                $(".s10-box").hide()
+            })
+            $(".s11").mouseover(function(){
+                $(".s11-box").show()
+            })
+            $(".s11").mouseout(function(){
+                $(".s11-box").hide()
+            })
+            $(".s12").mouseover(function(){
+                $(".s12-box").show()
+            })
+            $(".s12").mouseout(function(){
+                $(".s12-box").hide()
+            })  
+             $(".s13").mouseover(function(){
+                $(".s13-box").show()
+            })
+            $(".s13").mouseout(function(){
+                $(".s13-box").hide()
+            })
+             $(".denglu").mouseover(function(){
+                $(".denglu-box").show()
+            })
+            $(".denglu ").mouseout(function(){
+                $(".denglu-box").hide()
+            })
+            $(".qrcode").mouseover(function(){
+                $(".qrcode-box").show()
+            })
+            $(".qrcode").mouseout(function(){
+                $(".qrcode-box").hide()
+            })  
+            $(".new2-s1 span").mouseover(function(){
+                $(".menu").show()
+            })
+            $(".new2-s1 span").mouseout(function(){
+                $(".menu").hide()
+            }) 
+            $(".touch li").mouseover(function(){
+                var index = $(this).index();
+                $(".inputstyle").eq(index).show().siblings().hide();
+            }) 
+            $(".t1").mouseover(function(){
+                $(this).addClass("select").siblings().removeClass("select")
+                var index = $(this).index();
+                $(".til-pic").eq(index).show().siblings().hide();
+            })                        
+        })
+    </script>
+</body>
+</html>
