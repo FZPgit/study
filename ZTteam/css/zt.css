@@ -1,0 +1,164 @@
+html{
+	font-size: 37.5px;
+	width: 100%;
+    height: 100%;
+	font-family: "微软雅黑";
+	background-color: #f1f1f1;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.top-pic{
+	height: 4rem;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}  
+.swiper-slide img{
+	width: 100%;
+    height: 100%;
+}
+.head{
+	padding: 0.32rem;
+    font-size: 0;
+    background: #fff;
+}
+.head img{
+	width: 2.26667rem;
+    height: 0.45333rem;
+}
+.my{
+	float: right;
+}
+.my img{
+	width: 0.4rem;
+    height: 0.4rem;
+}
+.my span{
+	margin-left: 0.10667rem;
+    vertical-align: 0.05333rem;
+    font-size: 0.4rem;
+    color: #262323;
+}
+.subject-box{
+	height: 1.92rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 0.37333rem 0;
+    background: #fff;
+}
+.subject-box a{
+	width: 20%;
+    display: inline-block;
+    font-size: 0;
+    text-align: center;
+}
+.subject-box ul li img{
+	width: 1.28rem;
+    height: 1.28rem;
+    border-radius: 100%;
+}
+.subject-box ul li p{
+	font-size: 0.37333rem;
+    color: #262323;
+    margin-top: 0.21333rem;
+}
+.clearfix{
+	content: "";
+	clear: both;
+	height: 0;
+	display: block;
+}
+.hot-teacher{
+	font-size: 0.48rem;
+    color: #ff7200;
+    padding: 0.4rem;
+}
+a{
+	margin: 0;
+    padding: 0;
+    border: 0;
+    color: #666;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+}
+.teacher-item{
+	background: #fff;
+    height: 2.93333rem;
+    padding-left: 2.93333rem;
+    position: relative;
+    margin-bottom: 0.26667rem;
+}
+.teacher-item img{
+	position: absolute;
+    left: 0.4rem;
+    top: 0.4rem;
+    width: 2.13333rem;
+    height: 2.13333rem;
+}
+.teacher-info{
+	height: 2.93333rem;
+    font-size: 0;
+}
+.detail{
+	width: 100%;
+	margin-top: 0.48rem;
+	display: inline-block;
+}
+.name{
+	font-size: 0.4rem;
+    color: #262323;
+}
+.sub{
+	font-size: 0.32rem;
+    display: inline-block;
+    padding: 0 0.10667rem;
+    color: #fff;
+    border-radius: 0.08rem;
+    background: #52c644;
+    border: 1px solid #52c644;
+    margin-left: 0.10667rem;
+}
+.grade-tag{
+	font-size: 0.32rem;
+    display: inline-block;
+    padding: 0 0.10667rem;
+    border-radius: 0.08rem;
+    border: 1px solid #097c25;
+    color: #097c25;
+    margin-left: 0.10667rem;
+}
+.teach-time{
+	font-size: 0.34667rem;
+    color: #888;
+    float: right;
+    margin-right: 0.4rem;
+    margin-top: 0.10667rem;
+}
+.school{
+	margin-top: 0.13333rem;
+}
+.school span{
+	font-size: 0.34667rem;
+    color: #888;
+}
+.accept{
+	position: absolute;
+    bottom: 0.4rem;
+}
+.accept span{
+	font-size: 0.34667rem;
+    color: #262323;
+    margin-left: 0.10667rem;
+    display: inline-block;
+    padding-left: 0.42667rem;
+    background-image: url("../image/下载.png");
+    background-repeat: no-repeat;
+    background-size: 0.4rem 0.4rem;
+    background-position: 0rem 0.05333rem;
+}
